@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext.asynciterable", "es6"],
+    "module": "commonjs",
+    "target": "es6",
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    },
+    "plugins": [
+      {
+        "name": "ts-graphql-plugin",
+        "schema": "dist/graphql-schema.json",
+        "tag": "gql"
+      }
+    ]
+  },
+  "include": ["src/**/*"]
+}
